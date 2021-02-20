@@ -132,6 +132,7 @@ const execute = async () => {
       });
     }
   }
+  await browser.close();
   return tickerWithEvEbit
 }
 
