@@ -5,7 +5,6 @@ const sleep = seconds =>
 
 const execute = async () => {
   const browser = await puppeteer.launch({
-    headless: false,
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox'
