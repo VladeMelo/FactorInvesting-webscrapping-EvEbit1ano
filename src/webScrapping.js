@@ -52,7 +52,7 @@ const execute = async () => {
   ];
   const allTickers = [];
 
-  for (let x = 8 ; x < 9 ; x++) {
+  for (let x = 0 ; x < sections.length ; x++) {
     await page.goto(`https://statusinvest.com.br/acoes/setor/${sections[x]}`);
 
     await page.select(`#main-2 > div > div > div.input-field.w-100.w-sm-50.w-md-15.pb-2.pr-sm-3 > div > select`, '1'); // to select the category "Ações"
