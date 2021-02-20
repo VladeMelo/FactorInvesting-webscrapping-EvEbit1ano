@@ -115,7 +115,7 @@ const execute = async () => {
 
     if (waitingDailyLiquidity !== '-' && waitingEnterpriseValue !== '-' && firstEbit !== '-'  && secondEbit !== '-'  && thirdEbit !== '-'  && fourthEbit !== '-') { 
     // removing stocks that don't 'exist' anymore or don't have any result
-  
+    
       let enterpriseValueWithoutDots = '';
       for (let x = 0 ; x < waitingEnterpriseValue.length ; x++) {
         if (waitingEnterpriseValue[x] !== '.') {
