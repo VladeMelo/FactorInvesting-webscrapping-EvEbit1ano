@@ -4,10 +4,10 @@ const sleep = seconds =>
   new Promise(resolve => setTimeout(resolve, (seconds || 1) * 1000))
 
 const execute = async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage({
+  const browser = await puppeteer.launch({
     headless: false,
   });
+  const page = await browser.newPage();
 
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36');
 
